@@ -1,5 +1,25 @@
-## Caffinate manager dock app
+# Caffeinate manager
 
- MacOS dock app to keep your computer from going to sleep. When the button is checked to disable caffeinate it kills the process. 
+A small macOS menu bar app that keeps your Mac awake. It's a one-click switch for the built-in `caffeinate` command.
 
-After building move to aplications folder and enable start on login. then toggel on/off using the button in the menu bar.
+![The Caffeinate manager menu open in the menu bar, with Activate Caffeinate checked](docs/screenshot.png)
+
+## Install
+
+1. Download the zip from the [latest release](https://github.com/LadariousX/Caffeinate-manager/releases/latest) and unzip it.
+2. Move `Caffeinate manager.app` to your Applications folder.
+3. Open the app. macOS will block it the first time, because the app isn't notarized by Apple.
+4. Go to **System Settings > Privacy & Security**, scroll down, and click **Open Anyway**.
+5. Optional: add it under **System Settings > General > Login Items** to start it at login.
+
+Requires macOS 15.7 or later, on Apple silicon or Intel.
+
+## Usage
+
+Click the cup icon in the menu bar, then click **Activate Caffeinate**. A check mark appears and the cup fills in while your Mac is being kept awake. Click it again to turn it off.
+
+Choosing **Quit** also turns it off.
+
+## Build from source
+
+Open `Caffeinate manager.xcodeproj` in Xcode and run the `Caffeinate manager` scheme.
